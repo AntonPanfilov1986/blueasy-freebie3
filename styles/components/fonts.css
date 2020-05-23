@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "freedie";
+  src: url("../../fonts/freedie.eot?qduzpv");
+  src: url("../../fonts/freedie.eot?qduzpv#iefix") format("embedded-opentype"),
+    url("../../fonts/freedie.ttf?qduzpv") format("truetype"),
+    url("../../fonts/freedie.woff?qduzpv") format("woff"),
+    url("../../fonts/freedie.svg?qduzpv#freedie") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "freedie" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-coffee1:before {
+  content: "\e905";
+}
+.icon-plus:before {
+  content: "\e906";
+}
+.icon-dribbble:before {
+  content: "\e908";
+}
+.icon-coffee:before {
+  content: "\e900";
+}
+.icon-dslr:before {
+  content: "\e901";
+}
+.icon-frame:before {
+  content: "\e902";
+}
+.icon-Instant:before {
+  content: "\e903";
+}
+.icon-quotes-right:before {
+  content: "\e978";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-google:before {
+  content: "\e904";
+}

@@ -1,0 +1,22 @@
+.list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.number:hover {
+  color: #4bcaff;
+}
+@media (min-width: 480px) {
+}
+@media (min-width: 640px) {
+}
+@media (min-width: 960px) {
+  .list {
+      margin-bottom: 0;
+  }
+
+}
