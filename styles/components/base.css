@@ -106,9 +106,7 @@ footer a {
   line-height: 24px;
   text-transform: uppercase;
 }
-.footer-nav > a:hover {
-  color: #ffffff;
-}
+
 .footer-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,10 +122,6 @@ footer a {
 }
 .footer-year {
   margin: 0;
-}
-.footer-nav > a:not(:last-child)::after {
-  content: "|";
-  margin: 0 1px 0 4px;
 }
 .icon-square {
   display: -webkit-box;
@@ -162,9 +156,6 @@ label {
   .icon-top {
     font-size: 20px;
   }
-  .footer-nav > a:not(:last-child)::after {
-    margin: 0 3px 0 6px;
-  }
 }
 @media (min-width: 640px) {
   .logo {
@@ -179,9 +170,6 @@ label {
   .footer-body {
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-  .footer-nav > a:not(:last-child)::after {
-    margin: 0 5px 0 8px;
   }
 }
 @media (min-width: 960px) {
@@ -216,9 +204,6 @@ label {
     .footer-body {
       padding-top: 80px;
       padding-bottom: 80px;
-    }
-    .footer-nav > a:not(:last-child)::after {
-      margin: 0 10px 0 13px;
     }
 }
 @media (min-width: 1200px) {

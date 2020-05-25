@@ -10,13 +10,32 @@
 .number:hover {
   color: #4bcaff;
 }
+.list-nav {
+  display: flex;
+  margin: 0;
+}
+.list-nav a:hover {
+  color: #ffffff;
+}
+.list-nav > li:not(:last-child)::after {
+  content: "|";
+  margin: 0 4px 0 4px;
+}
 @media (min-width: 480px) {
+  .list-nav > li:not(:last-child)::after {
+    margin: 0 6px 0 6px;
+  }
 }
 @media (min-width: 640px) {
+  .list-nav > li:not(:last-child)::after {
+    margin: 0 8px 0 8px;
+  }
 }
 @media (min-width: 960px) {
   .list {
       margin-bottom: 0;
   }
-
+  .list-nav > li:not(:last-child)::after {
+    margin: 0 13px 0 13px;
+  }
 }
