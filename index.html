@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -18,12 +19,12 @@
               <div class="section-header-content">
                 <div class="logo"><a href="#">blu<span>e</span>asy</a></div>
                 <nav class="nav">
-                  <div class="nav-bar">
+                  <div id="menu" class="nav-bar">
                     <a class="nav-item is-active" href="#">home</a>
-                    <a class="nav-item" href="#">services</a>
+                    <a class="nav-item" href="#services">services</a>
                     <a class="nav-item" href="#">features</a>
-                    <a class="nav-item" href="#">portfolio</a>
-                    <a class="nav-item" href="#">contact</a>
+                    <a class="nav-item" href="#portfolio">portfolio</a>
+                    <a class="nav-item" href="#contact">contact</a>
                   </div>
                   <a class="nav-bar-togle" href="#">
                     <span></span>
@@ -61,7 +62,7 @@
             </div>
           </div>
         </section>
-        <section class="section section-services">
+        <section id="services" class="section section-services">
           <div class="container">
             <p class="section-title">services</p>
             <div class="card card-services">
@@ -104,7 +105,7 @@
             </div>
           </div>
         </section>
-        <section class="section section-portfolio">
+        <section id="portfolio" class="section section-portfolio">
           <div class="container">
             <div class="section-portfolio-head">
               <p class="section-title">portfolio</p>
@@ -267,7 +268,7 @@
             </div>
           </div>
         </section>
-        <section class="section section-contact">
+        <section id="contact" class="section section-contact">
           <div class="container">
             <figure class="section-background">
               <img src="images/image_contact.png" alt="picture">
@@ -309,17 +310,27 @@
       <footer class="footer">
         <div class="container">
           <div class="footer-body">
-            <ul class="list list-nav">
+            <ul class="list list-nav ">
               <li><a href="#">home</a></li>
-              <li><a href="#">services</a></li>
-              <li><a href="#">portfolio</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#services">services</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#contact">contact</a></li>
             </ul>
             <p class="footer-year">2013 ©</p>
           </div>
         </div>
       </footer>
     </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $("#menu").on("click","a", function (event) {
+             event.preventDefault();
+             var id  = $(this).attr('href'),
+                 top = $(id).offset().top;
+             $('body,html').animate({scrollTop: top}, 1500);
+         });
+     });
+     </script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -11,6 +11,8 @@
   color: #4bcaff;
 }
 .list-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
 }
